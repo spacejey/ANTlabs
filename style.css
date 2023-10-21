@@ -1,0 +1,12 @@
+div p {
+  display: inline;
+  margin-right: 10px;
+}
+
+.highlight-pink {
+  background-color: pink;
+}
+
+.highlight-green {
+  background-color: lightgreen;
+}
