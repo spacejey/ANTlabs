@@ -1,12 +1,12 @@
-const showBtn = document.getElementById('btn-show')
 const text1Input = document.getElementById('text1')
 const text2Input = document.getElementById('text2')
 const string1Diff = document.getElementById('string1-diff')
 const string2Diff = document.getElementById('string2-diff')
 
-function onClick() {
+function onInputChange() {
   const text1 = text1Input.value
   const text2 = text2Input.value
+
   const differences = findDifferences(text1, text2)
   highlightDifferences(text1, text2, differences)
 }
@@ -39,4 +39,7 @@ function highlightDifferences(text1, text2, differences) {
   string2Diff.innerHTML = string2HTML
 }
 
-showBtn.addEventListener('click', onClick)
+
+
+text1Input.addEventListener('input', onInputChange)
+text2Input.addEventListener('input', onInputChange)

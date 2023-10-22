@@ -52,6 +52,7 @@ input[type="text"] {
 /* 스타일 차이점 */
 .highlight-pink, .highlight-green {
   padding: 2px;
+  font-weight: bold;
 }
 
 .highlight-pink {
@@ -75,4 +76,23 @@ input[type="text"] {
   #btn-show {
     font-size: 14px;
   }
+}
+
+.difference {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #333;
+  background-color: #f5f5f5;
+}
+
+.difference p {
+  margin: 0;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.dif-string {
+  line-height: 2.5;
 }
